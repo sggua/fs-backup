@@ -9,8 +9,8 @@
 # Optimized and simplified version with a unified logic and pre-flight checks.
 # Uses numeric IDs for ACL records.
 # After synchronization, the backup is renamed to the current date.
-# (c) 2025, Gemini 2.5 pro (Google)
-# (c) 2025, Serhii Horichenko
+# (c) Gemini 2.5 pro (Google), 2025
+# (c) Serhii Horichenko, 2025
 # ==============================================================================
 
 # Safe mode: exit on error, exit on use of an uninitialized variable,
