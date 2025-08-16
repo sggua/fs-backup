@@ -1,21 +1,24 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ukrainian translation for fs-backup.sh
+# Copyright (C) 2025 Serhii Horichenko, Gemini 2.5 pro (Google)
+# This file is distributed under the same license as the fs-backup.sh package.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: fs-backup 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-16 21:49+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2025-08-16 22:40+0200\n"
+"PO-Revision-Date: 2025-08-16 22:40+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: fs-backup.sh:74
+msgid "Usage: $0 [mode] [options]"
+msgstr ""
 
 #: fs-backup.sh:76
 msgid "MODES (choose one):"
@@ -54,8 +57,7 @@ msgid "Specify the backup source (default: /)."
 msgstr ""
 
 #: fs-backup.sh:87
-msgid ""
-"Specify the destination directory for backups (default: current directory)."
+msgid "Specify the destination directory for backups (default: current directory)."
 msgstr ""
 
 #: fs-backup.sh:88
@@ -85,6 +87,18 @@ msgstr ""
 #: fs-backup.sh:115
 msgid "Operation canceled by the user."
 msgstr ""
+
+#: fs-backup.sh:129
+msgid "IMPORTANT! This script is intended for system recovery."
+msgstr "ВАЖЛИВО! Цей скрипт призначений для відновлення системи."
+
+#: fs-backup.sh:130
+msgid "Run it from a Live-CD/USB environment with sudo privileges."
+msgstr "Запускайте його з Live-CD/USB середовища з правами sudo."
+
+#: fs-backup.sh:131
+msgid "DO NOT RUN ON A LIVE (RUNNING) SYSTEM!"
+msgstr "НЕ ЗАПУСКАЙТЕ НА ПРАЦЮЮЧІЙ СИСТЕМІ!"
 
 #: fs-backup.sh:135
 msgid "!!! WARNING: SYSTEM RECOVERY PROCESS IS STARTING !!!"
@@ -255,8 +269,7 @@ msgid "!!! WARNING: RESTORING FROM AN INCREMENTAL BACKUP !!!"
 msgstr ""
 
 #: fs-backup.sh:334
-msgid ""
-"This process will first restore the full backup, then apply the changes."
+msgid "This process will first restore the full backup, then apply the changes."
 msgstr ""
 
 #: fs-backup.sh:342

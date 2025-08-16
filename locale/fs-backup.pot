@@ -1,14 +1,13 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ukrainian translation for fs-backup.sh
+# Copyright (C) 2025 Serhii Horichenko, Gemini 2.5 pro (Google)
+# This file is distributed under the same license as the fs-backup.sh package.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: fs-backup 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-16 21:45+0200\n"
+"POT-Creation-Date: 2025-08-16 22:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +15,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: fs-backup.sh:74
+msgid "Usage: $0 [mode] [options]"
+msgstr ""
 
 #: fs-backup.sh:76
 msgid "MODES (choose one):"
@@ -85,6 +88,18 @@ msgstr ""
 #: fs-backup.sh:115
 msgid "Operation canceled by the user."
 msgstr ""
+
+#: fs-backup.sh:129
+msgid "IMPORTANT! This script is intended for system recovery."
+msgstr "ВАЖЛИВО! Цей скрипт призначений для відновлення системи."
+
+#: fs-backup.sh:130
+msgid "Run it from a Live-CD/USB environment with sudo privileges."
+msgstr "Запускайте його з Live-CD/USB середовища з правами sudo."
+
+#: fs-backup.sh:131
+msgid "DO NOT RUN ON A LIVE (RUNNING) SYSTEM!"
+msgstr "НЕ ЗАПУСКАЙТЕ НА ПРАЦЮЮЧІЙ СИСТЕМІ!"
 
 #: fs-backup.sh:135
 msgid "!!! WARNING: SYSTEM RECOVERY PROCESS IS STARTING !!!"
