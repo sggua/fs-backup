@@ -1,0 +1,332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-16 21:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: fs-backup.sh:76
+msgid "MODES (choose one):"
+msgstr ""
+
+#: fs-backup.sh:77
+msgid "Create a new full backup."
+msgstr ""
+
+#: fs-backup.sh:78
+msgid "Synchronize with the latest full backup (update it)."
+msgstr ""
+
+#: fs-backup.sh:79
+msgid "Create an incremental backup relative to the latest full one."
+msgstr ""
+
+#: fs-backup.sh:80
+msgid "Restore the system from a backup for the specified date (YYYY-MM-DD)."
+msgstr ""
+
+#: fs-backup.sh:82
+msgid "REQUIRED PARAMETERS:"
+msgstr ""
+
+#: fs-backup.sh:83
+msgid "For --recover:     <date in YYYY-MM-DD format>"
+msgstr ""
+
+#: fs-backup.sh:85
+msgid "ADDITIONAL OPTIONS:"
+msgstr ""
+
+#: fs-backup.sh:86
+msgid "Specify the backup source (default: /)."
+msgstr ""
+
+#: fs-backup.sh:87
+msgid ""
+"Specify the destination directory for backups (default: current directory)."
+msgstr ""
+
+#: fs-backup.sh:88
+msgid "Run without asking for confirmation."
+msgstr ""
+
+#: fs-backup.sh:89
+msgid "Show this help message."
+msgstr ""
+
+#: fs-backup.sh:97
+msgid "OPERATION PLAN"
+msgstr ""
+
+#: fs-backup.sh:103
+msgid "Used --force or -y flag, proceeding without confirmation."
+msgstr ""
+
+#: fs-backup.sh:108
+msgid "Do you agree to execute this plan? [y/N]: "
+msgstr ""
+
+#: fs-backup.sh:111
+msgid "Plan confirmed. Starting execution..."
+msgstr ""
+
+#: fs-backup.sh:115
+msgid "Operation canceled by the user."
+msgstr ""
+
+#: fs-backup.sh:135
+msgid "!!! WARNING: SYSTEM RECOVERY PROCESS IS STARTING !!!"
+msgstr ""
+
+#: fs-backup.sh:136
+msgid "Please ensure you are running this script from a Live-CD/USB."
+msgstr ""
+
+#: fs-backup.sh:137 fs-backup.sh:335
+msgid "Press Enter to continue or Ctrl+C to cancel..."
+msgstr ""
+
+#: fs-backup.sh:145
+msgid "Source: "
+msgstr ""
+
+#: fs-backup.sh:146
+msgid "Destination: "
+msgstr ""
+
+#: fs-backup.sh:157
+msgid "✅ Recovery complete. Manually create system directories:"
+msgstr ""
+
+#: fs-backup.sh:159
+msgid "After this, you need to reinstall the bootloader (GRUB)."
+msgstr ""
+
+#: fs-backup.sh:181
+msgid "Error: --recover requires a date in YYYY-MM-DD format."
+msgstr ""
+
+#: fs-backup.sh:190
+msgid "Error: --source requires a path."
+msgstr ""
+
+#: fs-backup.sh:199
+msgid "Error: --dest requires a path."
+msgstr ""
+
+#: fs-backup.sh:206
+msgid "Unknown parameter: %s"
+msgstr ""
+
+#: fs-backup.sh:217
+msgid "Error: required command '%s' is not found. Please install it."
+msgstr ""
+
+#: fs-backup.sh:224
+msgid "Error: source directory '%s' not found."
+msgstr ""
+
+#: fs-backup.sh:228
+msgid "Error: destination directory '%s' does not exist or is not writable."
+msgstr ""
+
+#: fs-backup.sh:252
+msgid "Analyzing disk space for full backup..."
+msgstr ""
+
+#: fs-backup.sh:259 fs-backup.sh:284 fs-backup.sh:314 fs-backup.sh:378
+msgid "Mode:"
+msgstr ""
+
+#: fs-backup.sh:259
+msgid "Full Backup"
+msgstr ""
+
+#: fs-backup.sh:260 fs-backup.sh:285 fs-backup.sh:316
+msgid "Source:"
+msgstr ""
+
+#: fs-backup.sh:260 fs-backup.sh:386
+msgid "Destination:"
+msgstr ""
+
+#: fs-backup.sh:261
+msgid "Required space (estimate):"
+msgstr ""
+
+#: fs-backup.sh:262
+msgid "Available on destination disk:"
+msgstr ""
+
+#: fs-backup.sh:266
+msgid "WARNING"
+msgstr ""
+
+#: fs-backup.sh:266
+msgid "Not enough free space on the destination disk!"
+msgstr ""
+
+#: fs-backup.sh:273
+msgid "Creating full backup in %s..."
+msgstr ""
+
+#: fs-backup.sh:277
+msgid "✅ Full backup successfully created in %s"
+msgstr ""
+
+#: fs-backup.sh:282
+msgid "Error: no full backup found to sync with."
+msgstr ""
+
+#: fs-backup.sh:284
+msgid "Synchronization"
+msgstr ""
+
+#: fs-backup.sh:285
+msgid "Syncing with:"
+msgstr ""
+
+#: fs-backup.sh:286
+msgid "Files deleted from the source will also be deleted from the backup."
+msgstr ""
+
+#: fs-backup.sh:290
+msgid "The backup will be renamed to:"
+msgstr ""
+
+#: fs-backup.sh:295
+msgid "Syncing with %s..."
+msgstr ""
+
+#: fs-backup.sh:302
+msgid "✅ Synchronization with %s is complete."
+msgstr ""
+
+#: fs-backup.sh:305
+msgid "Backup has been renamed to:"
+msgstr ""
+
+#: fs-backup.sh:311
+msgid "Error: no base backup found to create an increment from."
+msgstr ""
+
+#: fs-backup.sh:314
+msgid "Incremental Backup"
+msgstr ""
+
+#: fs-backup.sh:315
+msgid "Method:"
+msgstr ""
+
+#: fs-backup.sh:315
+msgid "Hard-links (saves space, fast execution)"
+msgstr ""
+
+#: fs-backup.sh:316 fs-backup.sh:380
+msgid "Base backup:"
+msgstr ""
+
+#: fs-backup.sh:317
+msgid "Changes will be saved to:"
+msgstr ""
+
+#: fs-backup.sh:321
+msgid "Creating incremental backup in %s..."
+msgstr ""
+
+#: fs-backup.sh:325
+msgid "Generating list of deleted files"
+msgstr ""
+
+#: fs-backup.sh:333
+msgid "!!! WARNING: RESTORING FROM AN INCREMENTAL BACKUP !!!"
+msgstr ""
+
+#: fs-backup.sh:334
+msgid ""
+"This process will first restore the full backup, then apply the changes."
+msgstr ""
+
+#: fs-backup.sh:342
+msgid "-> Step 1/3: Restoring from the base full backup..."
+msgstr ""
+
+#: fs-backup.sh:346
+msgid "-> Step 2/3: Applying changes from the incremental backup..."
+msgstr ""
+
+#: fs-backup.sh:351
+msgid "-> Step 3/3: Deleting files that are no longer in the source..."
+msgstr ""
+
+#: fs-backup.sh:355
+msgid "Deleting: "
+msgstr ""
+
+#: fs-backup.sh:361
+msgid "✅ Recovery complete."
+msgstr ""
+
+#: fs-backup.sh:365
+msgid "✅ Incremental backup created in %s"
+msgstr ""
+
+#: fs-backup.sh:372
+msgid "Error: no suitable full backup found for recovery on date %s."
+msgstr ""
+
+#: fs-backup.sh:378
+msgid "System Recovery"
+msgstr ""
+
+#: fs-backup.sh:379
+msgid "Target date:"
+msgstr ""
+
+#: fs-backup.sh:382
+msgid "Increments to apply:"
+msgstr ""
+
+#: fs-backup.sh:384
+msgid "No incremental backups found; only the full backup will be restored."
+msgstr ""
+
+#: fs-backup.sh:387
+msgid "WARNING: THIS OPERATION WILL OVERWRITE DATA IN:"
+msgstr ""
+
+#: fs-backup.sh:391
+msgid "Restoring to %s..."
+msgstr ""
+
+#: fs-backup.sh:394
+msgid "-> Step 1: Restoring from base full backup %s..."
+msgstr ""
+
+#: fs-backup.sh:401
+msgid "->  Step %s: Applying increment %s..."
+msgstr ""
+
+#: fs-backup.sh:415
+msgid "✅ Recovery to %s for date %s is complete."
+msgstr ""
+
+#: fs-backup.sh:419
+msgid "Error: no mode specified."
+msgstr ""
+
+#: fs-backup.sh:423
+msgid "Operation completed successfully."
+msgstr ""

@@ -1,0 +1,346 @@
+# Ukrainian translation for fs-backup.sh
+# Copyright (C) 2025 Serhii Horichenko, Gemini 2.5 pro (Google)
+# This file is distributed under the same license as the fs-backup.sh package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: fs-backup 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-16 21:50+0200\n"
+"PO-Revision-Date: 2025-08-16 21:50+0200\n"
+"Last-Translator: Serhii Horichenko <mail@sgg.im>\n"
+"Language-Team: Ukrainian <mail@sgg.im>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: fs-backup.sh
+msgid "Usage: $0 [mode] [options]"
+msgstr "Використання: $0 [режим] [опції]"
+
+#: fs-backup.sh
+msgid "MODES (choose one):"
+msgstr "РЕЖИМИ РОБОТИ (оберіть один):"
+
+#: fs-backup.sh
+msgid "Create a new full backup."
+msgstr "Створити нову повну резервну копію."
+
+#: fs-backup.sh
+msgid "Synchronize with the latest full backup (update it)."
+msgstr "Синхронізувати з останньою повною копією (оновити її)."
+
+#: fs-backup.sh
+msgid "Create an incremental backup relative to the latest full one."
+msgstr "Створити інкрементну копію відносно останньої повної."
+
+#: fs-backup.sh
+msgid "Restore the system from a backup for the specified date (YYYY-MM-DD)."
+msgstr "Відновити систему з копії за вказану дату (YYYY-MM-DD)."
+
+#: fs-backup.sh
+msgid "REQUIRED PARAMETERS:"
+msgstr "ОБОВ'ЯЗКОВІ ПАРАМЕТРИ:"
+
+#: fs-backup.sh
+msgid "For --recover:     <date in YYYY-MM-DD format>"
+msgstr "Для --recover:     <дата у форматі YYYY-MM-DD>"
+
+#: fs-backup.sh
+msgid "ADDITIONAL OPTIONS:"
+msgstr "ДОДАТКОВІ ОПЦІЇ:"
+
+#: fs-backup.sh
+msgid "Specify the backup source (default: /)."
+msgstr "Вказати джерело копіювання (типово: /)."
+
+#: fs-backup.sh
+msgid "Specify the destination directory for backups (default: current directory)."
+msgstr "Вказати теку призначення для бекапів (типово: поточна тека)."
+
+#: fs-backup.sh
+msgid "Run without asking for confirmation."
+msgstr "Запустити без додаткового підтвердження."
+
+#: fs-backup.sh
+msgid "Show this help message."
+msgstr "Показати цю довідку."
+
+#: fs-backup.sh
+msgid "OPERATION PLAN"
+msgstr "ПЛАН ВИКОНАННЯ"
+
+#: fs-backup.sh
+msgid "Used --force or -y flag, proceeding without confirmation."
+msgstr "Використано ключ --force або -y, запускаю виконання."
+
+#: fs-backup.sh
+msgid "Do you agree to execute this plan? [y/N]: "
+msgstr "Ви погоджуєтеся на виконання цього плану? [y/N]: "
+
+#: fs-backup.sh
+msgid "Plan confirmed. Starting execution..."
+msgstr "План підтверджено. Розпочинаю виконання..."
+
+#: fs-backup.sh
+msgid "Operation canceled by the user."
+msgstr "Операцію скасовано користувачем."
+
+#: fs-backup.sh
+msgid "IMPORTANT! This script is intended for system recovery."
+msgstr "ВАЖЛИВО! Цей скрипт призначений для відновлення системи."
+
+#: fs-backup.sh
+msgid "Run it from a Live-CD/USB environment with sudo privileges."
+msgstr "Запускайте його з Live-CD/USB середовища з правами sudo."
+
+#: fs-backup.sh
+msgid "DO NOT RUN ON A LIVE (RUNNING) SYSTEM!"
+msgstr "НЕ ЗАПУСКАЙТЕ НА ПРАЦЮЮЧІЙ СИСТЕМІ!"
+
+#: fs-backup.sh
+msgid "!!! WARNING: SYSTEM RECOVERY PROCESS IS STARTING !!!"
+msgstr "!!! УВАГА: ПОЧИНАЄТЬСЯ ПРОЦЕС ВІДНОВЛЕННЯ СИСТЕМИ !!!"
+
+#: fs-backup.sh
+msgid "Please ensure you are running this script from a Live-CD/USB."
+msgstr "Переконайтесь, що Ви запустили цей скрипт з Live-CD/USB."
+
+#: fs-backup.sh
+msgid "Press Enter to continue or Ctrl+C to cancel..."
+msgstr "Натисніть Enter для продовження або Ctrl+C для скасування..."
+
+#: fs-backup.sh
+msgid "Source: "
+msgstr "Джерело: "
+
+#: fs-backup.sh
+msgid "Destination: "
+msgstr "Призначення: "
+
+#: fs-backup.sh
+msgid "✅ Recovery complete. Manually create system directories:"
+msgstr "✅ Відновлення завершено. Створіть вручну системні каталоги:"
+
+#: fs-backup.sh
+msgid "After this, you need to reinstall the bootloader (GRUB)."
+msgstr "Після цього потрібно перевстановити завантажувач (GRUB)."
+
+#: fs-backup.sh
+msgid "Error: --recover requires a date in YYYY-MM-DD format."
+msgstr "Помилка: для --recover потрібно вказати дату YYYY-MM-DD."
+
+#: fs-backup.sh
+msgid "Error: --source requires a path."
+msgstr "Помилка: для --source потрібно вказати шлях."
+
+#: fs-backup.sh
+msgid "Error: --dest requires a path."
+msgstr "Помилка: для --dest потрібно вказати шлях."
+
+#: fs-backup.sh
+msgid "Unknown parameter: %s"
+msgstr "Невідомий параметр: %s"
+
+#: fs-backup.sh
+msgid "Error: required command '%s' is not found. Please install it."
+msgstr "Помилка: необхідна програма '%s' відсутня. Будь ласка, встановіть її."
+
+#: fs-backup.sh
+msgid "Error: source directory '%s' not found."
+msgstr "Помилка: каталог-джерело '%s' не знайдений."
+
+#: fs-backup.sh
+msgid "Error: destination directory '%s' does not exist or is not writable."
+msgstr "Помилка: каталог призначення '%s' не існує або недоступний для запису."
+
+#: fs-backup.sh
+msgid "Analyzing disk space for full backup..."
+msgstr "Аналіз дискового простору для повної копії..."
+
+#: fs-backup.sh
+msgid "Mode:"
+msgstr "Режим:"
+
+#: fs-backup.sh
+msgid "Full Backup"
+msgstr "Повна резервна копія"
+
+#: fs-backup.sh
+msgid "Source:"
+msgstr "Джерело:"
+
+#: fs-backup.sh
+msgid "Destination:"
+msgstr "Призначення:"
+
+#: fs-backup.sh
+msgid "Required space (estimate):"
+msgstr "Необхідно місця (оцінка):"
+
+#: fs-backup.sh
+msgid "Available on destination disk:"
+msgstr "Доступно на диску призначення:"
+
+#: fs-backup.sh
+msgid "WARNING"
+msgstr "УВАГА"
+
+#: fs-backup.sh
+msgid "Not enough free space on the destination disk!"
+msgstr "На диску призначення недостатньо вільного місця!"
+
+#: fs-backup.sh
+msgid "Creating full backup in %s..."
+msgstr "Створення повної копії до теки %s..."
+
+#: fs-backup.sh
+msgid "✅ Full backup successfully created in %s"
+msgstr "✅ Повна копія успішно створена в %s"
+
+#: fs-backup.sh
+msgid "Error: no full backup found to sync with."
+msgstr "Помилка: не знайдено повної копії для синхронізації."
+
+#: fs-backup.sh
+msgid "Synchronization"
+msgstr "Синхронізація"
+
+#: fs-backup.sh
+msgid "Syncing with:"
+msgstr "Синхронізація з:"
+
+#: fs-backup.sh
+msgid "Files deleted from the source will also be deleted from the backup."
+msgstr "Файли, видалені з джерела, будуть видалені також з резервної копії."
+
+#: fs-backup.sh
+msgid "The backup will be renamed to:"
+msgstr "Резервну копію буде перейменовано на:"
+
+#: fs-backup.sh
+msgid "Syncing with %s..."
+msgstr "Синхронізація з %s..."
+
+#: fs-backup.sh
+msgid "✅ Synchronization with %s is complete."
+msgstr "✅ Синхронізацію з %s завершено."
+
+#: fs-backup.sh
+msgid "Backup has been renamed to:"
+msgstr "Резервну копію перейменовано на:"
+
+#: fs-backup.sh
+msgid "Error: no base backup found to create an increment from."
+msgstr "Помилка: не знайдено базової копії для створення інкременту."
+
+#: fs-backup.sh
+msgid "Incremental Backup"
+msgstr "Інкрементна резервна копія"
+
+#: fs-backup.sh
+msgid "Method:"
+msgstr "Спосіб:"
+
+#: fs-backup.sh
+msgid "Hard-links (saves space, fast execution)"
+msgstr "Hard-links (економія місця, швидке виконання)"
+
+#: fs-backup.sh
+msgid "Base backup:"
+msgstr "Базова копія:"
+
+#: fs-backup.sh
+msgid "Changes will be saved to:"
+msgstr "Зміни будуть збережені до теки:"
+
+#: fs-backup.sh
+msgid "Creating incremental backup in %s..."
+msgstr "Створення інкрементної копії до теки %s..."
+
+#: fs-backup.sh
+msgid "Generating list of deleted files (skip-files.txt)..."
+msgstr "Складання списку видалених файлів (skip-files.txt)..."
+
+#: fs-backup.sh
+msgid "!!! WARNING: RESTORING FROM AN INCREMENTAL BACKUP !!!"
+msgstr "!!! УВАГА: ВІДНОВЛЕННЯ З ІНКРЕМЕНТНОЇ КОПІЇ !!!"
+
+#: fs-backup.sh
+msgid "This process will first restore the full backup, then apply the changes."
+msgstr "Цей процес відновить спочатку повну копію, а потім застосує зміни."
+
+#: fs-backup.sh
+msgid "-> Step 1/3: Restoring from the base full backup..."
+msgstr "-> Крок 1/3: Відновлення з базової повної копії..."
+
+#: fs-backup.sh
+msgid "-> Step 2/3: Applying changes from the incremental backup..."
+msgstr "-> Крок 2/3: Застосування змін з інкрементної копії..."
+
+#: fs-backup.sh
+msgid "-> Step 3/3: Deleting files that are no longer in the source..."
+msgstr "-> Крок 3/3: Видалення файлів, що відсутні в джерелі..."
+
+#: fs-backup.sh
+msgid "Deleting: "
+msgstr "Видалення: "
+
+#: fs-backup.sh
+msgid "✅ Recovery complete."
+msgstr "✅ Відновлення завершено."
+
+#: fs-backup.sh
+msgid "✅ Incremental backup created in %s"
+msgstr "✅ Інкрементна копія створена в %s"
+
+#: fs-backup.sh
+msgid "Error: no suitable full backup found for recovery on date %s."
+msgstr "Помилка: не знайдено відповідної повної копії для відновлення на дату %s."
+
+#: fs-backup.sh
+msgid "System Recovery"
+msgstr "Відновлення системи"
+
+#: fs-backup.sh
+msgid "Target date:"
+msgstr "Цільова дата:"
+
+#: fs-backup.sh
+msgid "Increments to apply:"
+msgstr "Інкременти для застосування:"
+
+#: fs-backup.sh
+msgid "No incremental backups found; only the full backup will be restored."
+msgstr "Інкрементні копії не знайдені, буде відновлено лише повну копію."
+
+#: fs-backup.sh
+msgid "WARNING: THIS OPERATION WILL OVERWRITE DATA IN:"
+msgstr "УВАГА: ЦЯ ОПЕРАЦІЯ ПЕРЕЗАПИШЕ ДАНІ В:"
+
+#: fs-backup.sh
+msgid "Restoring to %s..."
+msgstr "Відновлення до %s..."
+
+#: fs-backup.sh
+msgid "-> Step 1: Restoring from base full backup %s..."
+msgstr "-> Крок 1: Відновлення з базової повної копії %s..."
+
+#: fs-backup.sh
+msgid "->  Step %s: Applying increment %s..."
+msgstr "->  Крок %s: Застосування інкременту %s..."
+
+#: fs-backup.sh
+msgid "✅ Recovery to %s for date %s is complete."
+msgstr "✅ Відновлення до %s на дату %s завершено."
+
+#: fs-backup.sh
+msgid "Error: no mode specified."
+msgstr "Помилка: не вказано режим роботи."
+
+#: fs--backup.sh
+msgid "Operation completed successfully."
+msgstr "Операцію успішно завершено."
+
