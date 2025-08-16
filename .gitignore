@@ -1,0 +1,6 @@
+.gitignore
+env_file
+.vscode
+*~
+*.mo
+
