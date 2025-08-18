@@ -83,10 +83,11 @@ usage() {
   echo "    $(_ "For --recover:     <date in YYYY-MM-DD format>")"
   echo
   echo "  $(_ "ADDITIONAL OPTIONS:")"
-  echo "    --source <path>    $(_ "Specify the backup source (default: /).")"
-  echo "    --dest <path>      $(_ "Specify the destination directory for backups (default: current directory).")"
-  echo "    --force, -y        $(_ "Run without asking for confirmation.")"
-  echo "    --help, -h         $(_ "Show this help message.")"
+  echo "    --storage <path>         $(_ "Specify the backup storage directory (default: current directory).")"
+  echo "    --source <path>          $(_ "Specify the backup source (default: /).")"
+  echo "    --dest <directory name>  $(_ "Specify the destination directory (default: YYYY-MM-DD-HHMMSS-type-of-backup).")"
+  echo "    --force, -y              $(_ "Run without asking for confirmation.")"
+  echo "    --help, -h               $(_ "Show this help message.")"
   echo
   exit 1
 }
@@ -197,6 +198,15 @@ while [ "$#" -gt 0 ]; do
           shift
       else
           printf "$(_ "Error: --dest requires a path.")\n" >&2
+          exit 1
+      fi
+      ;;
+    --storage)
+      if [ -n "$2" ]; then
+          DEST_PATH="$2"
+          shift
+      else
+          printf "$(_ "Error: --storage requires a path.")\n" >&2
           exit 1
       fi
       ;;
