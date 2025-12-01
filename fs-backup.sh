@@ -1,6 +1,25 @@
 #!/bin/bash
 
 # ==============================================================================
+# FS-Backup, a small tool to backup file system into rsynced copy
+#            and it's softlinked copies.
+#
+# Copyright (C) 2025 Gemini 2.5 pro (Google)
+# Copyright (C) 2025 Serhii Horichenko
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+# ==============================================================================
 # Universal script for filesystem backup (Internationalized)
 # Uses rsync to create full, incremental, and synchronized copies.
 # Dynamically excludes the backup destination directory.
@@ -9,8 +28,6 @@
 # Optimized and simplified version with a unified logic and pre-flight checks.
 # Uses numeric IDs for ACL records.
 # After synchronization, the backup is renamed to the current date.
-# (c) Gemini 2.5 pro (Google), 2025
-# (c) Serhii Horichenko, 2025
 # ==============================================================================
 
 # Safe mode: exit on error, exit on use of an uninitialized variable,
@@ -433,3 +450,4 @@ fi
 echo -e "\n${COLOR_GREEN}$(_ "Operation completed successfully.")${COLOR_RESET}\n"
 
 exit 0
+
